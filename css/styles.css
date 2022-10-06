@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+/* ROOT VARS */
+:root {
+  --sedan: #e28525;
+  --suv: #016972;
+  --lux: #00403f;
+  --bg-color: #f2f2f2;
+
+  /* BORDER-RADIUS */
+  --br: 0.5rem;
+}
+
+/* BODY */
+body {
+  background-color: var(--bg-color);
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* MAIN */
+main {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  height: 30rem;
+  margin-top: 10rem;
+  justify-content: center;
+}
+
+.sub-card {
+  padding: 2rem;
+  max-width: 15rem;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+.sedan {
+  background-color: var(--sedan);
+  border-top-left-radius: var(--br);
+  border-bottom-left-radius: var(--br);
+}
+
+.suv {
+  background-color: var(--suv);
+}
+
+.lux {
+  background-color: var(--lux);
+  border-top-right-radius: var(--br);
+  border-bottom-right-radius: var(--br);
+}
+
+button {
+  margin-top: 5rem;
+  padding: 1rem;
+  border-radius: 2rem;
+  width: 10rem;
+  font-weight: 700;
+  background: white;
+  border: none;
+  mix-blend-mode: screen;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: wheat;
+}
+
+/* FOOTER */
+.attribution {
+  margin-top: 5rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
